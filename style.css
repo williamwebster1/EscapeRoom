@@ -67,3 +67,6 @@
 .hide{
 	visibility:hidden;
 }
+.display{
+display: none;
+}

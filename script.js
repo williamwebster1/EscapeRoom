@@ -119,8 +119,8 @@ el.src = "image/green3.jpg";
 
 function checkConfiguration(el){
 	if (document.getElementById("red1").src.match("image/red1.jpg") && document.getElementById("red2").src.match("image/red2.jpg") && document.getElementById("red3").src.match("image/red3.jpg") && document.getElementById("blue1").src.match("image/blue1.jpg") && document.getElementById("blue2").src.match("image/blue2.jpg") && document.getElementById("blue3").src.match("image/blue3.jpg") && document.getElementById("green1").src.match("image/green1.jpg") && document.getElementById("green2").src.match("image/green2.jpg") && document.getElementById("green3").src.match("image/green3.jpg")){
-		document.getElementById("lock").src = "image/key.png";
-		console.log("if");
+		document.getElementById("lock").classList.add("display");
+		document.getElementById("key").classList.remove("display")
 	} else {
 		console.log("else");
 	}
